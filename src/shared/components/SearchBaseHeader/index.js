@@ -19,6 +19,12 @@ import { Link } from "@mui/material";
 
 function SearchBaseHeader({ maxWidth }) {
   const classes = searchBaseHeaderLayout();
+  const handleLoginButton = () => {
+    console.log("handleLoginIsClicked");
+  };
+  const handleSignupButton = () => {
+    console.log("handleSignupButton");
+  };
   const isUserAuthenticated = false;
   return (
     <AppBar position="fixed" id="menu" elevation={0} className={classes.appBar}>
@@ -40,10 +46,10 @@ function SearchBaseHeader({ maxWidth }) {
             ) : (
               <>
                 <Box mr={1} className={classes.buttonLogin}>
-                  <Button>Login</Button>
+                  <Button onClick={handleLoginButton}>Login</Button>
                 </Box>
                 <Box className={classes.buttonSignup}>
-                  <Button> SignUp</Button>
+                  <Button onClick={handleSignupButton}> SignUp</Button>
                 </Box>
               </>
             )}
