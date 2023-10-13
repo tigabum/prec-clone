@@ -45,7 +45,7 @@ function SearchBaseHeader({ maxWidth }) {
               </Box>
             ) : (
               <>
-                <Box mr={1} className={classes.buttonLogin}>
+                <Box className={classes.buttonLogin} mr={1}>
                   <Button onClick={handleLoginButton}>Login</Button>
                 </Box>
                 <Box className={classes.buttonSignup}>
