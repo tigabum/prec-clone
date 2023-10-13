@@ -12,6 +12,11 @@ export default makeStyles((theme) =>
     toolbar: {
       justifyContent: "space-between",
     },
+    logoContainer: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+    },
     logo: {
       borderRadius: "50%",
       overflow: "hidden",
@@ -30,13 +35,33 @@ export default makeStyles((theme) =>
       padding: "12px 22px",
       borderRadius: "8px",
       "&:hover": {
-        background: palette.secondary.light,
+        background: palette.secondary.main,
         color: "white",
       },
       "&: active": {
         background: palette.secondary.main,
       },
     },
-    buttonSignup: {},
+    buttonSignup: {
+      border: `1px solid ${palette.grey["300"]}`,
+      color: palette.text.primary,
+      background: palette.background.paper,
+      padding: "12px 22px",
+      fontSize: "0.938rem",
+      fontWeight: 500,
+      letterSpacing: "0.029em",
+      borderRadius: "8px",
+      "&:hover": {
+        background: palette.background.paper,
+        border: `1px solid ${palette.primary.light}`,
+        color: palette.primary.main,
+      },
+
+      "&:active": {
+        border: `1px solid ${palette.primary.light}`,
+        background: palette.background.paper,
+        color: palette.primary.main,
+      },
+    },
   })
 );
