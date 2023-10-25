@@ -32,7 +32,7 @@ function SearchBaseHeader({ maxWidth }) {
         <Toolbar disableGutters className={classes.toolbar}>
           <Box className={classes.logoContainer}>
             <Typography color="#00779C" pr={1}>
-              Possible Cleaning Services
+              Possible Cs
             </Typography>
             <Link href="/">
               <img src={logo} alt="image" className={classes.logo} />
