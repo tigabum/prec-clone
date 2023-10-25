@@ -14,7 +14,6 @@ export default makeStyles((theme) =>
     },
     logoContainer: {
       display: "flex",
-      flexDirection: "row",
       alignItems: "center",
     },
     logo: {
@@ -27,7 +26,7 @@ export default makeStyles((theme) =>
       // margin: "16px 0 16px 0",
     },
     buttonLogin: {
-      background: palette.colors.loginButton,
+      background: palette.gradients.cyanGradient,
       color: "red",
       fontSize: "0.938rem",
       fontWeight: 500,
@@ -35,7 +34,7 @@ export default makeStyles((theme) =>
       padding: "12px 22px",
       borderRadius: "8px",
       "&:hover": {
-        background: palette.secondary.main,
+        background: palette.secondary.dark,
         color: "white",
       },
       "&: active": {
